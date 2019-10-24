@@ -1,6 +1,7 @@
 import React from 'react';
 
 import FoodCard from './FoodCard';
+import Loader from '../Loader/Loader';
 
 const IMGURL = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference=";
 const APIKEY = "YOUR_API_KEY";
@@ -79,11 +80,12 @@ class FoodSearch extends React.Component {
           <span className="input-group-btn">
             <button 
               onClick={this.handleOnClickSearchRestaurant}
-              className="btn btn-primary" type="button">หารอบๆ</button>
+              className="btn btn-primary" type="button">หาร้าน</button>
           </span>
         </div>
         <div className="text-danger">{this.state.errMsg}</div>
         <hr className="mt-1 mb-3" />
+        {this.state.loading && <Loader />}
         <div className="mb-5">
           {foodList}
         </div>
