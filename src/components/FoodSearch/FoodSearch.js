@@ -4,7 +4,7 @@ import FoodCard from './FoodCard';
 import Loader from '../Loader/Loader';
 
 const IMGURL = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference=";
-const APIKEY = "YOUR_API_KEY";
+const APIKEY = "AIzaSyCTcUNlcIIeUJWgJTpcFipoqqDM1rXX-2Y";
 const imgSrc = `${IMGURL}CmRaAAAANpsofhVs69yjpEZz7DT4plGW8isBK7kLPDQ6HbP-XAPs6O3Za65ppg2G-7V7_2hnb4b9IZ_N4iE9xEXTzzZbdE1OlFHJ3zpIiEcz4m1r7wj9Wudlbj28gSr-c0RvgOEEEhAYP6mwQEHqleRjqiziJBE0GhR76W_Btimhy2WWFQ5HScsJ0oyUdQ&key=${APIKEY}`
 
 class FoodSearch extends React.Component {
