@@ -24,7 +24,7 @@ class FoodSearch extends React.Component {
     const value = this.state.value;
     this.setState({loading: true});
 
-    var url = new URL('http://localhost:3111/scg/food');
+    var url = new URL('https://whispering-dusk-15279.herokuapp.com/scg/food');
     if (value && value.trim().length > 0) {
       url.search = new URLSearchParams({
         "foodType": value

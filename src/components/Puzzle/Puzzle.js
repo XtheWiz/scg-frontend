@@ -32,7 +32,7 @@ class Puzzle extends React.Component {
         }
       }
 
-      var url = new URL('http://localhost:3111/scg/puzzle');
+      var url = new URL('https://whispering-dusk-15279.herokuapp.com/scg/puzzle');
       url.search = new URLSearchParams({
         "var1": nums[0],
         "var2": nums[1],
